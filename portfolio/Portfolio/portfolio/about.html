@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ankita Priya Rai</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-direction: column; /* Updated to column layout */
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            margin-top: 10px; /* Adjust margin to separate buttons from the paragraph */
+        }
+
+        header a {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        p {
+            margin-top: 20px; /* Add margin between buttons and paragraph */
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #ba97ee; /* Graphite purple */
+            padding: 10px;
+            text-align: justify;
+            flex: 1;
+        }
+        #resume-btn {
+            background-color: #f9f2f2;
+            color: rgb(12, 12, 12);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+         margin-bottom: 40px;
+            margin-top: 140px; /* Adjust the margin for separation */
+        }
+        .portfolio-item {
+            width: 35%;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(238, 139, 233);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .project-description {
+            margin-top: 10px;
+        }
+
+        .deployment-link {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer .social-link {
+            margin: 0 10px;
+        }
+
+        footer .social-link img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            
+        }
+
+        footer,
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .navigation {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ankita Priya Rai</h1>
+        <div class="navigation">
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+            <a href="index.html">Main</a>
+        </div>
+    </header>
+    </div>
+    <section>
+        <p>
+            <ul>
+                <li>Hello! I'm Ankita Priya Rai, a passionate web developer. I love creating interactive and user-friendly websites.</li> 
+                <li>Explore my portfolio to see some of my projects.</li>
+                <li>Coming to my education background, I have done my 10th & +2 from DAV Public School Paonta Sahib, Himachal Pradesh.</li> 
+                <li>I have done my BCA from Government Degree College Paonta Sahib, Himachal Pradesh.</li> 
+                <li>I have completed my MCA from The Oxford College of Science, Bangalore, with a CGPA of 8.32 in 2022.</li>
+                <li>With that, I have done an online full-stack web development course from Dev Town.</li>
+                <li>If I talk about my technical skills, I have knowledge of HTML, CSS, JavaScript, Node.js, React.js, Express.js, Bootstrap, MongoDB, and basic Python.</li> 
+                <li>Using these skills, I have developed some projects like a basic Zomato home clone page, a basic login page, Dragon-Dino game, to-do list, and Telewiki bot.</li>
+                <li>Talking about my soft skills, I am a team person with the ability to grasp things quickly and being able to blend with the flow.</li>
+                <li>Now coming to my hobbies, I love to draw and paint.</li>
+                <li>With that, I have got a basic Korean language hobby certificate from the Korean Culture Center.</li>
+                <li>Thank you. This is all about me.</li>
+            </ul>
+             </p>
+        <button id="resume-btn">Resume</button>
+    </section>
+    <footer> 
+        <h1>Contact Me</h1>
+        <div class="social-link">
+            <a href="https://www.linkedin.com/in/ankita-priya-rai-7088001a8" target="_blank">
+                <img src="LinkedIn logo.jpeg" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="https://github.com/Ankitapriyarai" target="_blank">
+                <img src="githublogo.png" alt="GitHub">
+            </a>
+        </div>  
+    </footer>
+    <script>
+        document.getElementById('resume-btn').addEventListener('click', function() {
+            // Replace 'your_resume.pdf' with the actual filename of your resume PDF
+            var pdfPath = 'Ankita Priya rai Resume word (1).pdf';
+
+            // Open the PDF in a new tab
+            window.open(pdfPath, '_blank');
+        });
+    </script>
+</body>
+</html>
+

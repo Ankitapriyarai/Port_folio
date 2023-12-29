@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Priya Rai - Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-direction: column; /* Updated to column layout */
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            margin-top: 10px; /* Adjust margin to separate buttons from the paragraph */
+        }
+
+        header a {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        p {
+            margin-top: 20px; /* Add margin between buttons and paragraph */
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #ba97ee; /* Graphite purple */
+            padding: 10px;
+        }
+
+        .portfolio-item {
+            width: 35%;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(238, 139, 233);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .project-description {
+            margin-top: 10px;
+        }
+
+        .deployment-link {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer .social-link {
+            margin: 0 10px;
+        }
+
+        footer .social-link img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        footer,
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .navigation {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ankita Priya Rai</h1>
+        <div class="navigation">
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+            <a href="index.html">Main</a>
+        </div>
+        <p>
+            Explore my projects and learn more about my journey as a web developer.
+            check out my projects.
+        </p>
+    </header>
+
+    <section>
+        <div class="portfolio-item">
+            <img src="Screenshot 2023-12-21 154452.png" alt="Project 1">
+            <h3>Zomato Home Clone Page</h3>
+            <div class="project-description">
+                <p>Description: Basic clone of Zomato home page.</p>
+                <p>Language used: HTML, CSS.</p>
+            </div>
+            <div class="deployment-link">
+                <label for="project1-link">Deployment Link:</label>
+                <a href=" https://poetic-gecko-6b0ad7.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                </div>
+        </div>
+          <div class="portfolio-item">
+            <img src="Screenshot (13).png" alt="Project 2">
+            <h3>Basic Login Page</h3>
+            <div class="project-description">
+                <p>Description:Basic Login Page </p>
+                <p>Language used: HTML, CSS.</p>
+                <p>It contains id, password column and social media website options</p>
+            </div>
+            <div class="deployment-link">
+                <label for="project2-link">Deployment Link:</label>
+                <a href="https://velvety-biscuit-028af8.netlify.app/ " target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+          </div>
+        <div class="portfolio-item">
+            <img src="Screenshot (14).png" alt="Project 3">
+            <h3>Dragon-Dino Game</h3>
+            <div class="project-description">
+                <p>Description: Dragon-Dino Game.</p>
+                <p>Language used: HTML, CSS, JavaScript. </p>
+                <p> Basic drangon vs dino game designed to play.</p>
+                <p> calculates scores and gives output.</p>
+            </div>
+            <div class="deployment-link">
+                <label for="project3-link">Deployment Link:</label>
+                <a href="https://capable-biscochitos-9ce148.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+            </div>
+        <div class="portfolio-item">
+            <img src="Screenshot (15).png" alt="Project 4">
+            <h3>Todo-List</h3>
+            <div class="project-description">
+                Description: Todo-List.
+                Language used: HTML, CSS,React. JavaScript, node.js.
+                Basic to-do list.
+                 You can add, edit and delete the items of the list
+            </div>
+            <div class="deployment-link">
+                <label for="project4-link">Deployment Link:</label>
+                <a href="https://lambent-strudel-dedddc.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+            </div>
+        <div class="portfolio-item">
+            <img src="Screenshot (4).png" alt="Project 5">
+            <h3>Order_now_form</h3>
+            <div class="project-description">
+                Description:Order_now_form.
+                Language used: HTML, CSS,. JS and Bootstrap
+                This contains order now button, carousel and a form.
+                The carousel contains a slider, no people and no of plans with a highlighter.
+                Form contains text- box for name, email, order comments and button for cancel.
+                Place order with a title of place your order.
+            </div>
+            <div class="deployment-link">
+                <label for="project5-link">Deployment Link:</label>
+                <a href="https://65721b62d7dec20090f185ca--fantastic-donut-aaf613.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+            </div>
+         <div class="portfolio-item">
+            <img src="Screenshot 2023-12-09 163005.png" alt="Project 6">
+            <h3>Folder_structure</h3>
+            <div class="project-description">
+                Description: Folder_structure.
+                Language used: HTML, CSS,JS, and React.
+                It shows a tree-like structure.
+            Root node then branch node followed by leaf node.
+            It has edit and delete options, but logic needs to be implemented for making it work.
+            </div>
+            <div class="deployment-link">
+                <label for="project6-link">Deployment Link:</label>
+                <a href="https://shimmering-heliotrope-824105.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="Screenshot (19).png" alt="Project 7">
+            <h3>Tic-Tac-Toe</h3>
+            <div class="project-description">
+                Description:it is a basic tic tac toe game.
+                Language used: HTML, CSS,JS.
+                It is a basic tic-tac-toe game.
+                It have restart and cancel button.   
+                If player x wins it shows player x won.
+                If player 0 wins it shows player 0 won.
+                If its a draw its shows draw.
+            <div class="deployment-link">
+                <label for="project7-link">Deployment Link:</label>
+                <a href="https://euphonious-cactus-68b1c8.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+        </div>
+        
+        <!-- Repeat the structure for other projects -->
+
+    </section>
+    <footer> 
+        <h1>Contact Me</h1>
+        <div class="social-link">
+            <a href="https://www.linkedin.com/in/ankita-priya-rai-7088001a8" target="_blank">
+                <img src="LinkedIn logo.jpeg" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="https://github.com/Ankitapriyarai" target="_blank">
+                <img src="githublogo.png" alt="GitHub">
+            </a>
+        </div>  
+    </footer>
+</body>
+</html>

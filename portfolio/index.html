@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Priya Rai - Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: rgb(249, 243, 243);
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #ba97ee; /* Graphite purple */
+            padding: 10px;
+        }
+
+        .portfolio-item {
+            width: 35%;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(238, 139, 233);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .project-description {
+            margin-top: 10px;
+        }
+
+        .deployment-link {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer .social-link {
+            margin: 0 10px;
+        }
+
+        footer .social-link img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        footer,
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        header .navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        header a {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px; /* Add margin to separate buttons */
+            text-decoration: none; /* Remove underline for anchor tags */
+            display: inline-block;
+        }
+
+        header .navigation {
+            margin-left: auto; /* Pushes the navigation to the right */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ankita Priya Rai</h1>
+        <div class="navigation">
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+        </div>
+    </header>
+ <section>
+        <div class="portfolio-item">
+            <img src="Screenshot 2023-12-21 154452.png" alt="Project 1">
+            <h3>Zomato Home Clone Page</h3>
+            <div class="project-description">
+                <p>Description: Basic clone of Zomato home page.</p>
+                <p>Language used: HTML, CSS.</p>
+            </div>
+            <div class="deployment-link">
+                <label for="project1-link">Deployment Link:</label>
+                <a href=" https://poetic-gecko-6b0ad7.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                </div>
+        </div>
+          <div class="portfolio-item">
+            <img src="Screenshot (13).png" alt="Project 2">
+            <h3>Basic Login Page</h3>
+            <div class="project-description">
+                <p>Description:Basic Login Page </p>
+                <p>Language used: HTML, CSS.</p>
+                <p>It contains id, password column and social media website options</p>
+            </div>
+            <div class="deployment-link">
+                <label for="project2-link">Deployment Link:</label>
+                <a href="https://velvety-biscuit-028af8.netlify.app/ " target="_blank" rel="noopener noreferrer">Visit Project</a>
+            </div>
+          </div>
+          
+        
+        <!-- Repeat the structure for other projects -->
+
+    </section>
+    <footer> 
+        <h1>Contact Me</h1>
+        <div class="social-link">
+            <a href="https://www.linkedin.com/in/ankita-priya-rai-7088001a8" target="_blank">
+                <img src="LinkedIn logo.jpeg" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="https://github.com/Ankitapriyarai" target="_blank">
+                <img src="githublogo.png" alt="GitHub">
+            </a>
+        </div>  
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all links in the navigation
+            const navigationLinks = document.querySelectorAll('.navigation a');
+
+            // Add a click event listener to each link
+            navigationLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    // Prevent the default behavior of the link
+                    event.preventDefault();
+
+                    // Get the href attribute of the clicked link
+                    const targetPage = link.getAttribute('href');
+
+                    // Load the content of the target page using AJAX or any other method
+                    // For simplicity, let's use a basic example with location.href
+                    window.location.href = targetPage;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
